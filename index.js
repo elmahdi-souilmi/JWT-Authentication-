@@ -4,8 +4,8 @@ const app = express()
 app.use(express.json())
 const jwt = require('jsonwebtoken')
 //models
-const userModel = require('./user.model')
-const bookModel = require('./books.model');
+const userModel = require('./model/user.model')
+const bookModel = require('./model/books.model');
 //const {json} = require('express');
 // Connecting to the database
 mongoose.connect('mongodb://localhost:27017/jwtest', {
